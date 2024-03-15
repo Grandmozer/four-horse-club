@@ -1,0 +1,22 @@
+.stepsblock {
+  padding-top: 166px;
+}
+
+.stepsblock-title {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 64.8px */
+  text-transform: uppercase;
+}
+
+.stepsblock-p {
+  color: var(--color-blue);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Golos Text';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}

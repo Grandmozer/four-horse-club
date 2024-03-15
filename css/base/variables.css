@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+:root {
+  /* Fonts */
+  --font-family-base: 'Golos Text', sans-serif;
+  --font-family-heading: 'Merriweather', sans-serif;
+
+  /*Grid*/
+  --gap: 20px;
+  --container-width: 1222px;
+
+  /*Section*/
+  --section-margin: 200px;
+  --hero-height: 700px;
+
+  /* prop */
+  --sm-text-size: 18px;
+  --m-text-size: 22px;
+
+  /*Colors*/
+  --color-tran: transparent;
+  --color-red: #f54932;
+  --color-yelow: #fbce51;
+  --color-blue: #3057a2;
+  --color-dark: #1f1f1f;
+  --color-white: #ffffff;
+  --color-gray: #d0d0d0;
+
+  --color-text: #313131;
+  /* --color-bg: #e9ded4; */
+
+  --border-color: var(--color-gray);
+}

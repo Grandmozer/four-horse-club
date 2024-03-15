@@ -3,27 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- test -->
+
+    <link rel="stylesheet" href="/css/sections/hero.css" />
+    <link rel="stylesheet" href="/css/sections/stepsblock.css" />
+    <link rel="stylesheet" href="/css/sections/infoblock.css" />
+    <link rel="stylesheet" href="/css/base/btn.css" />
+
     <title>Клуб четырёх коней</title>
   </head>
   <body>
     <header>
-      <img src="/public/img/logo.svg" alt="logo" />
-      <div>
-        <h1>Превратите уездный город в столицу земного шара</h1>
-        <p>
-          Оплатите взнос на телеграммы для организации Международного васюкинского турнира
-          по шахматам
-        </p>
-        <div>
-          <button>Поддержать шахматную мысль</button>
-          <button>Подробнее о турнире</button>
+      <div class="header-wrapper">
+        <div class="container">
+          <a class="logo" href="/">
+            <img src="/img/logo.svg" alt="logo" />
+          </a>
         </div>
       </div>
-      <div>
-        <p>Шахматы двигают вперед не только культуру, но и экономику!</p>
-        <p>Лед тронулся, господа присяжные заседатели!</p>
-      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="hero-body container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Превратите уездный город
+              <span>в столицу</span>
+              <span>земного шара</span>
+            </h1>
+            <p class="hero-text">
+              Оплатите взнос на телеграммы для организации Международного васюкинского турнира
+              по шахматам
+            </p>
+            <div class="hero-btns">
+              <button class="btn btn-maintain">Поддержать шахматную мысль</button>
+              <button class="btn btn-detail">Подробнее о турнире</button>
+            </div>
+            <img src="/img/city.png" class="hero-image hero-image-city" alt="#" />
+            <img src="/img/horse.png" class="hero-image hero-image-horse" alt="#" />
+            <img src="/img/pawn.png" class="hero-image hero-image-pawn" alt="#" />
+            <img src="/img/text-circle.svg" class="hero-image hero-text-circle" alt="#" />
+            <img src="/img/chess1.png" class="hero-image hero-image-chess1" alt="#" />
+            <img src="/img/chess2.png" class="hero-image hero-image-chess2" alt="#" />
+            <img src="/img/hero_bg.jpg" class="hero-image hero-bg" alt="#" />
+            <img src="/img/hero_bg2.png" class="hero-image hero-bg2" alt="#" />
+          </div>
+        </div>
+        <div class="hero-body__red-stroke red-stroke">
+          <ul class="red-stroke__list red-stroke__list--1">
+            <li class="red-stroke__item">Дело помощи утопающим — дело рук самих утопающих!</li>
+            <li class="red-stroke__item">
+              Шахматы двигают вперед не только культуру, но и экономику!
+            </li>
+            <li class="red-stroke__item">Лед тронулся, господа присяжные заседатели!</li>
+          </ul>
+          <ul class="red-stroke__list red-stroke__list--2" aria-hidden="true">
+            <li class="red-stroke__item">Дело помощи утопающим — дело рук самих утопающих!</li>
+            <li class="red-stroke__item">
+              Шахматы двигают вперед не только культуру, но и экономику!
+            </li>
+            <li class="red-stroke__item">Лед тронулся, господа присяжные заседатели!</li>
+          </ul>
+        </div>
+      </section>
+      <div class="container">
+        <div class="infoblock">
+          <div class="infoblock-support">
+            <h3 class="infoblock__title">
+              Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
+              <span class="text-red">«Плодотворная дебютная идея» </span>
+            </h3>
+            <img class="infoblock-support__img" src="/img/attachment1.png" alt="Шахматисты" />
+          </div>
+          <div class="infoblock-session">
+            <img class="infoblock-session__img" src="/img/support.png" alt="Шахматист" />
+            <div class="infoblock-session__content">
+              <h3 class="infoblock__title">
+                и Сеанс
+                <span class="text-red"> одновременной игры в шахматы на 160 досках</span>
+                гроссмейстера О. Бендера
+              </h3>
+              <ul class="infoblock-list">
+                <li class="list-item">
+                  <span>Место проведения:</span>
+                  <span>Клуб «Картонажник»</span>
+                </li>
+                <li class="list-item">
+                  <span>Дата и время мероприятия:</span>
+                  <span>22 июня 1927 г. в 18:00</span>
+                </li>
+                <li class="list-item">
+                  <span>Стоимость входных билетов:</span>
+                  <span>20 коп.</span>
+                </li>
+                <li class="list-item">
+                  <span>Плата за игру:</span>
+                  <span>50 коп.</span>
+                </li>
+                <li class="list-item">
+                  <span>Взнос на телеграммы:</span>
+                  <span>
+                    <del>100 руб.</del>
+                    21 руб. 16 коп.
+                  </span>
+                </li>
+              </ul>
+              <p>По всем вопросам обращаться в администрацию к К. Михельсону</p>
+            </div>
+          </div>
+        </div>
+        <div class="stepsblock">
+          <h2 class="stepsblock-title">Этапы преображения Васюков</h2>
+          <p class="stepsblock-p">Будущие источники обогащения васюкинцев</p>
+          <div class="steps-list"></div>
+        </div>
+        <div class="participants"></div>
+        <!--блок повторяется -->
+        <div>
+          <p>Шахматы двигают вперед не только культуру, но и экономику!</p>
+          <p>Лед тронулся, господа присяжные заседатели!</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта.
+        С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова
+        «Двенадцать стульев».
+      </p>
+    </footer>
   </body>
 </html>

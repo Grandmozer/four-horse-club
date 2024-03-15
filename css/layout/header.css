@@ -1,0 +1,31 @@
+header {
+  position: relative;
+}
+
+header .header-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-wrapper .logo {
+  display: block;
+  padding-top: 26px;
+}
+
+.header-wrapper .logo {
+  width: 246px;
+  height: auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .header-wrapper .logo {
+    padding-top: 18px;
+  }
+
+  .header-wrapper .logo svg {
+    width: 213px;
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  color: var(--color-text);
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+}
+
+.container {
+  max-width: calc(var(--container-width) + (var(--gap) * 2));
+  padding: 0 var(--gap);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 54px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}

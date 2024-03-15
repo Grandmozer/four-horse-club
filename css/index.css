@@ -1,0 +1,20 @@
+/*Options*/
+@import 'base/variables.css';
+@import 'base/base.css';
+/* @import "options/animation.css"; */
+
+/*Layout*/
+@import 'layout/header.css';
+/* @import "layout/footer.css"; */
+
+/*components*/
+@import 'base/btn.css';
+/* @import "components/carousel.css"; */
+
+/*Main*/
+@import 'sections/hero.css';
+@import 'sections/stepsblock.css';
+/* @import "section/text_line.css"; */
+@import 'sections/infoblock.css';
+/* @import "section/stages.css"; */
+/* @import "section/members.css"; */

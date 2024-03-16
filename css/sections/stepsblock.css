@@ -2,6 +2,12 @@
   padding-top: 166px;
 }
 
+.stepsblock__title-block {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .stepsblock-title {
   font-variant-numeric: lining-nums proportional-nums;
   font-size: 54px;
@@ -9,6 +15,7 @@
   font-weight: 400;
   line-height: 120%; /* 64.8px */
   text-transform: uppercase;
+  grid-column: span 8;
 }
 
 .stepsblock-p {

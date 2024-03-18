@@ -8,7 +8,7 @@
   padding: 13px 49px;
   transition: var(--transition-base);
   border-radius: 50rem;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-tran);
 }
 
 /* .btn.btn-xs {

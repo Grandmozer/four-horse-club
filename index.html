@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="/css/sections/hero.css" />
     <link rel="stylesheet" href="/css/sections/stepsblock.css" />
     <link rel="stylesheet" href="/css/sections/infoblock.css" />
+    <link rel="stylesheet" href="/css/sections/participants.css" />
     <link rel="stylesheet" href="/css/base/btn.css" />
+
+    <script defer src="js/main.js"></script>
+    <script defer src="js/swiper.js"></script>
 
     <title>Клуб четырёх коней</title>
   </head>
@@ -118,17 +122,177 @@
           <div class="stepsblock__title-block">
             <h2 class="stepsblock-title">
               Этапы преображения Васюков
-              <span class="stepsblock-p">Будущие источники обогащения васюкинцев</span>
+              <span class="stepsblock-p" id="blueText"
+                >Будущие источники обогащения васюкинцев
+              </span>
             </h2>
           </div>
-          <div class="steps-list"></div>
+          <ul class="steps-list desktop">
+            <li class="step-item step1">
+              <span class="step-number">1</span>
+              <p>Строительство железнодорожной магистрали Москва-Васюки</p>
+            </li>
+            <li class="step-item step2">
+              <span class="step-number">2</span>
+              <p>
+                Открытие фешенебельной гостиницы &laquo;Проходная пешка&raquo; и&nbsp;других
+                небоскрёбов
+              </p>
+            </li>
+            <li class="step-item step3">
+              <span class="step-number">3</span>
+              <p>
+                Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров: производство
+                овощей, фруктов, икры, шоколадных конфет
+              </p>
+            </li>
+            <li class="step-item step4">
+              <span class="step-number">4</span>
+              <p>Строительство дворца для турнира</p>
+            </li>
+            <li class="step-item step5">
+              <span class="step-number">5</span>
+              <p>Размещение гаражей <br />для гостевого <br />автотранспорта</p>
+            </li>
+            <li class="step-item step6">
+              <span class="step-number">6</span>
+              <p>
+                Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+              </p>
+            </li>
+            <li class="step-item step7">
+              <span class="step-number">7</span>
+              <p>
+                Создание аэропорта &laquo;Большие Васюки&raquo; с&nbsp;регулярным отправлением
+                почтовых самолётов и&nbsp;дирижаблей во&nbsp;все концы <br />света, включая
+                Лос-Анжелос и&nbsp;Мельбурн
+              </p>
+              <img src="/img/attachment3.png" alt="" />
+            </li>
+          </ul>
         </div>
-        <div class="participants"></div>
+        <div class="participants">
+          <div class="participants__head">
+            <h2 class="stepsblock-title">Участники турнира</h2>
+            <div class="participants__swiper-pagination desktop">
+              <button class="participants__button-prev btn-swiper">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#313131" />
+                  <path
+                    d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </button>
+              <div class="pagination-numbers">1/2</div>
+              <button class="participants__button-next btn-swiper">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="22" cy="22" r="22" fill="#313131" />
+                  <path
+                    d="M19.4618 13.5385L27.9233 22L19.4618 30.4615"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="participants-swiper-desk">
+            <div class="swiper-desk">
+              <div class="swiper-item">
+                <div class="player">
+                  <div class="avatar">
+                    <img src="img/player__img.png" alt="#" />
+                  </div>
+                  <div class="name">Хозе-Рауль Капабланка</div>
+                  <div class="post">Чемпион мира по шахматам</div>
+                  <div class="player-btn">
+                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-item">
+                <div class="player">
+                  <div class="avatar">
+                    <img src="img/player__img.png" alt="#" />
+                  </div>
+                  <div class="name">Эммануил Ласкер</div>
+                  <div class="post">Чемпион мира по шахматам</div>
+                  <div class="player-btn">
+                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-item">
+                <div class="player">
+                  <div class="avatar">
+                    <img src="img/player__img.png" alt="#" />
+                  </div>
+                  <div class="name">Александр Алехин</div>
+                  <div class="post">Чемпион мира по шахматам</div>
+                  <div class="player-btn">
+                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-item">
+                <div class="player">
+                  <div class="avatar">
+                    <img src="img/player__img.png" alt="#" />
+                  </div>
+                  <div class="name">Александр Алехин</div>
+                  <div class="post">Чемпион мира по шахматам</div>
+                  <div class="player-btn">
+                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-item">
+                <div class="player">
+                  <div class="avatar">
+                    <img src="img/player__img.png" alt="#" />
+                  </div>
+                  <div class="name">Рихард Рети</div>
+                  <div class="post">Чемпион мира по шахматам</div>
+                  <div class="player-btn">
+                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-item">
+                <div class="player">
+                  <div class="avatar">
+                    <img src="img/player__img.png" alt="#" />
+                  </div>
+                  <div class="name">Остап Бендер</div>
+                  <div class="post">Чемпион мира по шахматам</div>
+                  <div class="player-btn">
+                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--блок повторяется -->
-        <div>
-          <p>Шахматы двигают вперед не только культуру, но и экономику!</p>
-          <p>Лед тронулся, господа присяжные заседатели!</p>
-        </div>
+        <div></div>
+        <p>Шахматы двигают вперед не только культуру, но и экономику!</p>
+        <p>Лед тронулся, господа присяжные заседатели!</p>
       </div>
     </main>
     <footer>

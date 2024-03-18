@@ -44,7 +44,7 @@
   --width: 290px;
   margin-top: 61px;
   position: relative;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .infoblock-list:before {
@@ -102,6 +102,7 @@
 }
 
 .infoblock-session__content p {
+  padding-top: 50px;
   color: var(--color-blue);
   font-variant-numeric: lining-nums proportional-nums;
   font-family: 'Golos Text';

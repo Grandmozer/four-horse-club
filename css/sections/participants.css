@@ -1,0 +1,59 @@
+.participants {
+  padding-top: 200px;
+}
+
+.participants__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.participants__swiper-pagination {
+  display: flex;
+}
+
+.participants__button-next,
+.participants__button-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  border: none;
+}
+/* 
+.participants__button-prev {
+  background-image: url(/img/carousel\ button\ left.svg);
+}
+
+.participants__button-next {
+  background-image: url(/img/carousel\ button\ right.svg);
+} */
+
+.btn-swiper svg :hover {
+  fill: var(--color-yelow);
+}
+
+.btn-disabled {
+  fill: var(--color-gray);
+}
+
+/*swiper*/
+.participants-swiper-desk {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-desk {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* .player .avatar .name .post .player-btn; */

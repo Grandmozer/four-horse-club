@@ -14,6 +14,7 @@
 /*Main*/
 @import 'sections/hero.css';
 @import 'sections/stepsblock.css';
+@import 'sections/participants.css';
 /* @import "section/text_line.css"; */
 @import 'sections/infoblock.css';
 /* @import "section/stages.css"; */

@@ -40,10 +40,10 @@
 /*swiper*/
 .participants-swiper-desk {
   position: relative;
-  width: 600px;
-  height: 400px;
+  /* width: 600px;
+  height: 400px; */
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .swiper-desk {
@@ -51,9 +51,112 @@
   transition: transform 0.5s ease-in-out;
 }
 
+/* .player .avatar .name .post .player-btn; */
+
+.slider {
+  position: relative;
+  /* width: 1366px;
+  height: 631px; */
+  /* margin: 50px auto 0; */
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slider img {
+  pointer-events: none;
+}
+
+.slider-list {
+  /* width: 1366px;
+  height: 631px; */
+  overflow: hidden;
+}
+
+.slider-list.grab {
+  cursor: grab;
+}
+
+.slider-list.grabbing {
+  cursor: grabbing;
+}
+
+.slider-track {
+  display: flex;
+}
+
 .swiper-item {
-  width: 100%;
-  height: 100%;
+  /* width: 394px; */
+  /* height: 462px; */
+  flex-shrink: 3;
+  /* font-size: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+
   object-fit: cover;
 }
-/* .player .avatar .name .post .player-btn; */
+
+.slider-arrows {
+  /* margin-top: 15px; */
+  text-align: center;
+}
+
+.next,
+.prev {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.next.disabled,
+.prev.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.player {
+  align-items: center;
+  text-align: center;
+  /* margin-top: 115px; */
+  padding-right: 58px;
+  padding-left: 35px;
+  margin-right: 20px;
+}
+
+.name {
+  padding-top: 22px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+}
+
+.post {
+  padding-top: 6px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  opacity: 0.6;
+}
+
+.player-btn {
+  margin-top: 20px;
+  padding: 5px 12px;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 62px;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Golos Text';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

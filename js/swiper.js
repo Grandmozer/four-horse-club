@@ -5,6 +5,7 @@ const nextButton = document.querySelector('.participants__button-next');
 const slides = Array.from(slider.querySelectorAll('.swiper-item'));
 const slideCount = slides.length;
 let slideIndex = 0;
+let threeSlids = [];
 
 console.log(slides);
 

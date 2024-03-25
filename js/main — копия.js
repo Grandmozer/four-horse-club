@@ -130,10 +130,8 @@ let slider = document.querySelector('.slider'),
       if (Math.abs(posFinal) > posThreshold || swipeEndTime - swipeStartTime < 300) {
         if (posInit < posX1) {
           slideIndex--;
-          numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
         } else if (posInit > posX1) {
           slideIndex++;
-          numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
         }
       }
 
@@ -161,8 +159,6 @@ let slider = document.querySelector('.slider'),
     allowSwipe = true;
   };
 
-prev.classList.toggle('disabled', slideIndex === 0);
-
 sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
 sliderList.classList.add('grab');
 
@@ -174,15 +170,17 @@ arrows.addEventListener('click', function () {
   let target = event.target;
 
   if (target.classList.contains('next')) {
-    numbers.innerHTML = slideIndex + 2 + '<span>/6</span>';
+    numbers.textContent = slideIndex + 2 + '/6';
     slideIndex++;
   } else if (target.classList.contains('prev')) {
-    numbers.innerHTML = slideIndex + '<span>/6</span>';
     slideIndex--;
   } else {
     return;
   }
+
   console.log(numbers.textContent);
   console.log(slideIndex);
   slide();
 });
+
+// numbers = slideIndex + 1 + ' /6';

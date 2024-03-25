@@ -174,16 +174,25 @@
           <div class="participants__head">
             <h2 class="stepsblock-title">Участники турнира</h2>
             <div class="participants__swiper-pagination desktop slider-arrows">
-              <button class="participants__button-prev prev">
+              <button class="participants__button-prev btn-swiper prev">
                 <svg
+                  class="prev"
                   width="44"
                   height="44"
                   viewBox="0 0 44 44"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#313131" />
+                  <circle
+                    class="prev"
+                    cx="22"
+                    cy="22"
+                    r="22"
+                    transform="rotate(-180 22 22)"
+                    fill="#313131"
+                  />
                   <path
+                    class="prev"
                     d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384"
                     stroke="white"
                     stroke-width="2"
@@ -191,17 +200,22 @@
                   />
                 </svg>
               </button>
-              <!-- <div class="pagination-numbers">1/2</div> -->
+              <div class="pagination-numbers">
+                1
+                <span>/6</span>
+              </div>
               <button class="participants__button-next btn-swiper next">
                 <svg
+                  class="next"
                   width="44"
                   height="44"
                   viewBox="0 0 44 44"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="22" cy="22" r="22" fill="#313131" />
+                  <circle class="next" cx="22" cy="22" r="22" fill="#313131" />
                   <path
+                    class="next"
                     d="M19.4618 13.5385L27.9233 22L19.4618 30.4615"
                     stroke="white"
                     stroke-width="2"
@@ -212,86 +226,100 @@
             </div>
           </div>
           <div class="participants-swiper-desk">
-            <div class="swiper-desk slider-list slider-track">
-              <div class="swiper-item">
-                <div class="player">
-                  <div class="avatar">
-                    <img src="img/player__img.png" alt="#" />
-                  </div>
-                  <div class="name">Хозе-Рауль Капабланка</div>
-                  <div class="post">Чемпион мира по шахматам</div>
-                  <div class="player-btn">
-                    <a href="#" class="btn-outline btn-outline-blue btn-xs">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-item">
-                <div class="player">
-                  <div class="avatar">
-                    <img src="img/player__img.png" alt="#" />
-                  </div>
-                  <div class="name">Эммануил Ласкер</div>
-                  <div class="post">Чемпион мира по шахматам</div>
-                  <div class="player-btn">
-                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">Подробнее</a>
+            <div class="swiper-desk slider-list">
+              <div class="slider-track">
+                <div class="swiper-item">
+                  <div class="player">
+                    <div class="avatar">
+                      <img src="img/player__img.png" alt="#" />
+                    </div>
+                    <div class="name">Хозе-Рауль Капабланка</div>
+                    <div class="post">Чемпион мира по шахматам</div>
+                    <div class="player-btn">
+                      <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-item">
-                <div class="player">
-                  <div class="avatar">
-                    <img src="img/player__img.png" alt="#" />
-                  </div>
-                  <div class="name">Александр Алехин</div>
-                  <div class="post">Чемпион мира по шахматам</div>
-                  <div class="player-btn">
-                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-item">
-                <div class="player">
-                  <div class="avatar">
-                    <img src="img/player__img.png" alt="#" />
-                  </div>
-                  <div class="name">Александр Алехин</div>
-                  <div class="post">Чемпион мира по шахматам</div>
-                  <div class="player-btn">
-                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">Подробнее</a>
+                <div class="swiper-item">
+                  <div class="player">
+                    <div class="avatar">
+                      <img src="img/player__img.png" alt="#" />
+                    </div>
+                    <div class="name">Эммануил Ласкер</div>
+                    <div class="post">Чемпион мира по шахматам</div>
+                    <div class="player-btn">
+                      <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-item">
-                <div class="player">
-                  <div class="avatar">
-                    <img src="img/player__img.png" alt="#" />
-                  </div>
-                  <div class="name">Рихард Рети</div>
-                  <div class="post">Чемпион мира по шахматам</div>
-                  <div class="player-btn">
-                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">Подробнее</a>
+                <div class="swiper-item">
+                  <div class="player">
+                    <div class="avatar">
+                      <img src="img/player__img.png" alt="#" />
+                    </div>
+                    <div class="name">Александр Алехин</div>
+                    <div class="post">Чемпион мира по шахматам</div>
+                    <div class="player-btn">
+                      <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-item">
-                <div class="player">
-                  <div class="avatar">
-                    <img src="img/player__img.png" alt="#" />
+                <div class="swiper-item">
+                  <div class="player">
+                    <div class="avatar">
+                      <img src="img/player__img.png" alt="#" />
+                    </div>
+                    <div class="name">Арон Нимцович</div>
+                    <div class="post">Чемпион мира по шахматам</div>
+                    <div class="player-btn">
+                      <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
                   </div>
-                  <div class="name">Остап Бендер</div>
-                  <div class="post">Чемпион мира по шахматам</div>
-                  <div class="player-btn">
-                    <a href="#" class="btn btn-outline btn-outline-blue btn-xs">Подробнее</a>
+                </div>
+                <div class="swiper-item">
+                  <div class="player">
+                    <div class="avatar">
+                      <img src="img/player__img.png" alt="#" />
+                    </div>
+                    <div class="name">Рихард Рети</div>
+                    <div class="post">Чемпион мира по шахматам</div>
+                    <div class="player-btn">
+                      <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-item">
+                  <div class="player">
+                    <div class="avatar">
+                      <img src="img/player__img.png" alt="#" />
+                    </div>
+                    <div class="name">Остап Бендер</div>
+                    <div class="post">Чемпион мира по шахматам</div>
+                    <div class="player-btn">
+                      <a href="#" class="btn-outline">Подробнее</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--блок повторяется -->
-        <div></div>
-        <p>Шахматы двигают вперед не только культуру, но и экономику!</p>
-        <p>Лед тронулся, господа присяжные заседатели!</p>
+      </div>
+      <div class="hero-body__red-stroke red-stroke">
+        <ul class="red-stroke__list red-stroke__list--1">
+          <li class="red-stroke__item">Дело помощи утопающим — дело рук самих утопающих!</li>
+          <li class="red-stroke__item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </li>
+          <li class="red-stroke__item">Лед тронулся, господа присяжные заседатели!</li>
+        </ul>
+        <ul class="red-stroke__list red-stroke__list--2" aria-hidden="true">
+          <li class="red-stroke__item">Дело помощи утопающим — дело рук самих утопающих!</li>
+          <li class="red-stroke__item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </li>
+          <li class="red-stroke__item">Лед тронулся, господа присяжные заседатели!</li>
+        </ul>
       </div>
     </main>
     <footer>

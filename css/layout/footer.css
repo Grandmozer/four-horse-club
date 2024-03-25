@@ -1,0 +1,12 @@
+.footer {
+  background: var(--color-beg);
+}
+
+.footer p {
+  padding: 39px 20px 72px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  opacity: 0.6;
+}

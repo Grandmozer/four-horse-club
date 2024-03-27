@@ -45,18 +45,3 @@ h6 {
   padding: 0 var(--gap);
   margin: 0 auto;
 }
-
-.section-title {
-  font-size: 54px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: var(--color-text);
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 767px) {
-  .section-title {
-    font-size: 36px;
-    line-height: 1.1;
-  }
-}

@@ -8,6 +8,7 @@
 
   /*Grid*/
   --gap: 20px;
+  --gap24: 24px;
   --container-width: 1222px;
 
   /*Section*/
@@ -15,8 +16,10 @@
   --hero-height: 700px;
 
   /* prop */
+  --xs-text-size: 16px;
   --sm-text-size: 18px;
-  --m-text-size: 22px;
+  --m-text-size: 20px;
+  --stroke-text-size: 22px;
 
   /*Colors*/
   --color-tran: transparent;
@@ -28,4 +31,10 @@
   --color-gray: #d6d6d6;
   --color-beg: #e9ded4;
   --color-text: #313131;
+  --border-color: #d0d0d0;
+}
+@media (max-width: 1300px) {
+  :root {
+    --container-width: 1000px;
+  }
 }

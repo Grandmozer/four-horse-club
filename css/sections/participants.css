@@ -1,5 +1,5 @@
 .participants {
-  padding-top: 200px;
+  padding-top: var(--section-margin);
   padding-bottom: 141px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .pagination-numbers {
-  font-size: 16px;
+  font-size: var(--xs-text-size);
   font-weight: 400;
   line-height: 19.2px;
   text-align: left;
@@ -125,7 +125,7 @@
 
 .post {
   padding-top: 6px;
-  font-size: 20px;
+  font-size: var(--m-text-size);
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -140,7 +140,7 @@
   border-radius: 62px;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: 'Golos Text';
-  font-size: 16px;
+  font-size: var(--xs-text-size);
   font-style: normal;
   font-weight: 500;
   line-height: 120%;

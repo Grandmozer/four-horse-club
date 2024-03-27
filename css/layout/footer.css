@@ -4,7 +4,7 @@
 
 .footer p {
   padding: 39px 20px 72px 0px;
-  font-size: 16px;
+  font-size: var(--xs-text-size);
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */

@@ -136,12 +136,9 @@
   position: relative;
 }
 
-@keyframes scroll-marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 24px));
+@media only screen and (max-width: 450px) {
+  .hero-title {
+    font-size: 36px;
   }
 }
 /* 

@@ -8,11 +8,13 @@
     <!-- test -->
     <link rel="stylesheet" href="/css/base/variables.css" />
 
+    <link rel="stylesheet" href="/css/layout/header.css" />
     <link rel="stylesheet" href="/css/sections/hero.css" />
     <link rel="stylesheet" href="/css/sections/stepsblock.css" />
     <link rel="stylesheet" href="/css/sections/infoblock.css" />
     <link rel="stylesheet" href="/css/sections/participants.css" />
     <link rel="stylesheet" href="/css/base/btn.css" />
+    <link rel="stylesheet" href="/css/base/base.css" />
     <link rel="stylesheet" href="/css/layout/footer.css" />
 
     <script defer src="js/main.js"></script>
@@ -79,12 +81,21 @@
           <div class="infoblock-support">
             <div class="infoblock-title">
               <h3 class="infoblock__title">Чтобы поддержать Международный васюкинский турнир</h3>
+              <img
+                class="infoblock-support__img mobile"
+                src="/img/attachment1.png"
+                alt="Шахматисты"
+              />
               <h3 class="infoblock__title infoblock__title-mobile">
                 посетите лекцию на тему:
                 <span class="text-red">«Плодотворная дебютная идея» </span>
               </h3>
             </div>
-            <img class="infoblock-support__img" src="/img/attachment1.png" alt="Шахматисты" />
+            <img
+              class="infoblock-support__img desktop"
+              src="/img/attachment1.png"
+              alt="Шахматисты"
+            />
           </div>
           <div class="infoblock-session">
             <img class="infoblock-session__img" src="/img/support.png" alt="Шахматист" />
@@ -132,7 +143,7 @@
               </span>
             </h2>
           </div>
-          <ul class="steps-list desktop">
+          <ul class="steps-list">
             <li class="step-item step1">
               <span class="step-number">1</span>
               <p>Строительство железнодорожной магистрали Москва-Васюки</p>
@@ -179,7 +190,7 @@
         <div class="participants slider">
           <div class="participants__head">
             <h2 class="stepsblock-title">Участники турнира</h2>
-            <div class="participants__swiper-pagination desktop slider-arrows">
+            <div class="participants__swiper-pagination slider-arrows">
               <button class="participants__button-prev btn-swiper prev">
                 <svg
                   class="prev"

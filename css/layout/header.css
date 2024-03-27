@@ -20,7 +20,7 @@ header .header-wrapper {
   height: auto;
 }
 
-/* @media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
   .header-wrapper .logo {
     padding-top: 18px;
   }
@@ -28,4 +28,4 @@ header .header-wrapper {
   .header-wrapper .logo svg {
     width: 213px;
   }
-} */
+}

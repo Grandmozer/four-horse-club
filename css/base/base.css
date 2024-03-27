@@ -45,3 +45,15 @@ h6 {
   padding: 0 var(--gap);
   margin: 0 auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}

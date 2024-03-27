@@ -38,3 +38,8 @@
     --container-width: 1000px;
   }
 }
+@media (max-width: 768px) {
+  :root {
+    --m-text-size: 18px;
+  }
+}

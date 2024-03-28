@@ -90,16 +90,46 @@
   align-items: center;
   flex: 0 0 auto;
 }
-/* 
+
 @media (max-width: 1300px) {
-  .steps-list::after {
-    content: url('/img/attachment3.png');
-    pointer-events: none;
-    position: absolute;
-    top: -150px;
-    right: 0;
-  }
   .step-item img {
     display: none;
   }
-} */
+}
+
+@media only screen and (max-width: 828px) {
+  .steps-list {
+    gap: 10px;
+    margin-top: 39px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stepsblock {
+    position: relative;
+    user-select: none;
+    touch-action: pan-y;
+    overflow: hidden;
+  }
+
+  .steps-list__mobile {
+    display: flex;
+  }
+
+  .step-item__mobile {
+    width: 335px;
+    padding: 62px 20px 0px 20px;
+    font-weight: 500;
+    background-image: url(/img/hero_bg.jpg);
+  }
+
+  .steps-list__mobile::before {
+    content: url('/img/attachment3.png');
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    justify-self: center;
+    /* top: -150px;
+  right: 0; */
+  }
+}

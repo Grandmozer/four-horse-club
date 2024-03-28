@@ -136,86 +136,146 @@
   position: relative;
 }
 
-@media only screen and (max-width: 450px) {
-  .hero-title {
-    font-size: 36px;
+@keyframes scroll-marquee {
+  from {
+    transform: translateX(0);
   }
-}
-/* 
-@media only screen and (max-width: 1199px) {
-  .hero-content {
-    max-width: 335px;
-  }
-
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-text {
-    text-align: start;
-  }
-
-  .hero-buttons {
-    flex-wrap: wrap;
+  to {
+    transform: translateX(calc(-100% - 24px));
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .hero-text-circle {
-    width: 55%;
-    top: 140px;
-  }
-
+@media only screen and (max-width: 1300px) {
+  .hero-image-chess1,
   .hero-image-chess2 {
-    right: 50px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .hero-content {
-    padding-top: 91px;
-  }
-
-  .hero-buttons {
-    margin-top: 30px;
-    gap: 14px;
-  }
-
-  .hero-image-city {
-    left: 21px;
-    bottom: 12px;
-    width: 887px;
-  }
-
-  .hero-text-circle {
-    width: 299px;
-    bottom: 66px;
-    top: auto;
-    right: 27px;
+    width: 81px;
   }
 
   .hero-image-chess1 {
-    left: 43px;
-    z-index: -2;
-    width: 59px;
-    bottom: 111px;
-    top: auto;
+    top: calc(38% - -53px);
+    left: calc(63% + 47px);
   }
+
   .hero-image-chess2 {
-    right: 66px;
-    width: 61px;
-    bottom: 163px;
-    transform: rotate(7deg);
-    top: auto;
+    top: calc(24% - -42px);
   }
+
+  .hero-text-circle {
+    width: 44%;
+    top: calc(4%);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-image-chess1,
+  .hero-image-chess2 {
+    width: 1px;
+  }
+
   .hero-image-pawn {
     display: none;
   }
 
-  .hero-image-horse {
-    width: 96px;
-    left: 38%;
-    right: auto;
-    bottom: -18px;
+  .hero-text-circle {
+    width: 299px;
+    top: calc(32%);
   }
-} */
+
+  .hero-image-horse {
+    right: 78px;
+    bottom: -1px;
+    width: 22%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-image-city {
+    position: relative;
+    left: calc(-14% + -34px);
+    width: 875px;
+    bottom: 31px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .btn-detail {
+    background-color: var(--color-white);
+    border: none;
+    margin-top: 14px;
+  }
+}
+
+@media only screen and (max-width: 579px) {
+  .hero-image-horse {
+    width: 1px;
+  }
+}
+
+/* Проверить на этом экране */
+@media only screen and (max-width: 450px) {
+  .hero-content {
+    max-width: 542px;
+    padding-top: 91px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-title span:first-child {
+    margin-left: 8px;
+  }
+
+  .hero-btns {
+    margin-top: 31px;
+    display: flex;
+  }
+
+  .btn-maintain {
+    padding: 12px 17px;
+  }
+
+  .hero-text-circle {
+    width: 297px;
+    top: calc(53%);
+    right: calc(10% + 11px);
+  }
+
+  .hero-image-city {
+    left: calc(-116% + -32px);
+    width: 885px;
+    bottom: -49px;
+  }
+
+  .hero-image-horse {
+    right: 131px;
+    bottom: 6px;
+    width: 98px;
+  }
+
+  .hero-image-chess1,
+  .hero-image-chess2 {
+    width: 60px;
+  }
+
+  .hero-image-chess1 {
+    top: calc(63% - -53px);
+    left: calc(4% + 48px);
+  }
+
+  .hero-image-chess2 {
+    top: calc(59% - -42px);
+    transform: rotate(9deg);
+    right: calc(22% + 4px);
+  }
+
+  .red-stroke {
+    padding: 10px;
+  }
+}

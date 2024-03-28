@@ -1,3 +1,4 @@
+// я бы сделала это компонентом, но для меня сложно сделать это компонентом.
 let slider = document.querySelector('.slider'),
   sliderList = slider.querySelector('.slider-list'),
   sliderTrack = slider.querySelector('.slider-track'),

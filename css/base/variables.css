@@ -33,13 +33,23 @@
   --color-text: #313131;
   --border-color: #d0d0d0;
 }
+
 @media (max-width: 1300px) {
   :root {
     --container-width: 1000px;
   }
 }
+
 @media (max-width: 768px) {
   :root {
-    --m-text-size: 18px;
+    --hero-height: 774px;
+    /* --m-text-size: 18px; */
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --container-width: 336px;
+    --stroke-text-size: 18px;
   }
 }

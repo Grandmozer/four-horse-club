@@ -1,10 +1,9 @@
-// я бы сделала это компонентом, но для меня сложно сделать это компонентом.
-let slider = document.querySelector('.slider'),
-  sliderList = slider.querySelector('.slider-list'),
-  sliderTrack = slider.querySelector('.slider-track'),
-  slides = slider.querySelectorAll('.swiper-item'),
-  arrows = slider.querySelector('.slider-arrows'),
-  numbers = slider.querySelector('.pagination-numbers'),
+let slider = document.querySelector('.stepsblock'),
+  sliderList = slider.querySelector('.slider-list__stepsblock'),
+  sliderTrack = slider.querySelector('.slider-track__stepsblock'),
+  slides = slider.querySelectorAll('.step-item__mobile'),
+  arrows = slider.querySelector('.slider-arrows__stepsblock'),
+  rounds = slider.querySelector('.rounds'),
   prev = arrows.children[0],
   next = arrows.children[2],
   slideWidth = slides[0].offsetWidth,
@@ -131,10 +130,10 @@ let slider = document.querySelector('.slider'),
       if (Math.abs(posFinal) > posThreshold || swipeEndTime - swipeStartTime < 300) {
         if (posInit < posX1) {
           slideIndex--;
-          numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
+          // numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
         } else if (posInit > posX1) {
           slideIndex++;
-          numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
+          // numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
         }
       }
 
@@ -175,15 +174,15 @@ arrows.addEventListener('click', function () {
   let target = event.target;
 
   if (target.classList.contains('next')) {
-    numbers.innerHTML = slideIndex + 2 + '<span>/6</span>';
+    // numbers.innerHTML = slideIndex + 2 + '<span>/6</span>';
     slideIndex++;
   } else if (target.classList.contains('prev')) {
-    numbers.innerHTML = slideIndex + '<span>/6</span>';
+    // numbers.innerHTML = slideIndex + '<span>/6</span>';
     slideIndex--;
   } else {
     return;
   }
-  console.log(numbers.textContent);
-  console.log(slideIndex);
+  // console.log(numbers.textContent);
+  // console.log(slideIndex);
   slide();
 });

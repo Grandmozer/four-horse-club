@@ -190,73 +190,62 @@
           <div class="slider-list__stepsblock">
             <ul class="steps-list__mobile mobile slider-track__stepsblock">
               <li class="step-item__mobile">
-                <span class="step-number">1</span>
-                <p>Строительство железнодорожной магистрали Москва-Васюки</p>
-
-                <span class="step-number">2</span>
-                <p>
-                  Открытие фешенебельной гостиницы &laquo;Проходная пешка&raquo; и&nbsp;других
-                  небоскрёбов
-                </p>
+                <div class="item-content">
+                  <span class="step-number">1</span>
+                  <p>Строительство железнодорожной магистрали Москва-Васюки</p>
+                </div>
+                <div class="item-content">
+                  <span class="step-number">2</span>
+                  <p>
+                    Открытие фешенебельной гостиницы &laquo;Проходная пешка&raquo; и других
+                    небоскрёбов
+                  </p>
+                </div>
               </li>
               <li class="step-item__mobile">
-                <span class="step-number">3</span>
-                <p>
-                  Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров:
-                  производство овощей, фруктов, икры, шоколадных конфет
-                </p>
+                <div class="item-content">
+                  <span class="step-number">3</span>
+                  <p>
+                    Поднятие сельского хозяйства в&nbsp;радиусе на&nbsp;тысячу километров:
+                    производство овощей, фруктов, икры, шоколадных конфет
+                  </p>
+                </div>
               </li>
               <li class="step-item__mobile">
-                <span class="step-number">4</span>
-                <p>Строительство дворца <br />для турнира</p>
-
-                <span class="step-number">5</span>
-                <p>Размещение гаражей <br />для гостевого <br />автотранспорта</p>
+                <div class="item-content">
+                  <span class="step-number">4</span>
+                  <p>Строительство дворца <br />для турнира</p>
+                </div>
+                <div class="item-content">
+                  <span class="step-number">5</span>
+                  <p>Размещение гаражей для гостевого автотранспорта</p>
+                </div>
               </li>
               <li class="step-item__mobile">
-                <span class="step-number">6</span>
-                <p>
-                  Постройка сверхмощной радиостанции для передачи всему миру сенсационных
-                  результатов
-                </p>
+                <div class="item-content">
+                  <span class="step-number">6</span>
+                  <p>
+                    Постройка сверхмощной радиостанции для передачи всему миру сенсационных
+                    результатов
+                  </p>
+                </div>
               </li>
               <li class="step-item__mobile">
-                <span class="step-number">7</span>
-                <p>
-                  Создание аэропорта &laquo;Большие Васюки&raquo; с&nbsp;регулярным отправлением
-                  почтовых самолётов и&nbsp;дирижаблей во&nbsp;все концы <br />света, включая
-                  Лос-Анжелос и&nbsp;Мельбурн
-                </p>
+                <div class="item-content">
+                  <span class="step-number">7</span>
+                  <p>
+                    Создание аэропорта &laquo;Большие Васюки&raquo; с&nbsp;регулярным отправлением
+                    почтовых самолётов и&nbsp;дирижаблей во&nbsp;все концы <br />света, включая
+                    Лос-Анжелос и&nbsp;Мельбурн
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
           <!-- Ну это конечно  совсем не круто вставлять svg код, без серьёзной надобности, при чём он же дублируется и это одна и та же иконка 4 раза. -->
-          <div class="slider-arrows__stepsblock">
-            <button class="prev">
-              <svg
-                class="prev"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  class="prev"
-                  cx="22"
-                  cy="22"
-                  r="22"
-                  transform="rotate(-180 22 22)"
-                  fill="#313131"
-                />
-                <path
-                  class="prev"
-                  d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                />
-              </svg>
+          <div class="slider-arrows__stepsblock mobile">
+            <button class="btn-swiper prev">
+              <img src="/img/arrow.png" alt="" />
             </button>
             <div class="rounds">
               <div class="round"></div>
@@ -265,24 +254,8 @@
               <div class="round"></div>
               <div class="round"></div>
             </div>
-            <button class="next">
-              <svg
-                class="next"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle class="next" cx="22" cy="22" r="22" fill="#313131" />
-                <path
-                  class="next"
-                  d="M19.4618 13.5385L27.9233 22L19.4618 30.4615"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                />
-              </svg>
+            <button class="participants__button-next btn-swiper next">
+              <img src="/img/arrow.png" alt="" />
             </button>
           </div>
         </div>
@@ -291,53 +264,14 @@
             <h2 class="stepsblock-title">Участники турнира</h2>
             <div class="participants__swiper-pagination slider-arrows">
               <button class="participants__button-prev btn-swiper prev">
-                <svg
-                  class="prev"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    class="prev"
-                    cx="22"
-                    cy="22"
-                    r="22"
-                    transform="rotate(-180 22 22)"
-                    fill="#313131"
-                  />
-                  <path
-                    class="prev"
-                    d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                  />
-                </svg>
+                <img src="/img/arrow.png" alt="" />
               </button>
               <div class="pagination-numbers">
                 1
                 <span>/6</span>
               </div>
               <button class="participants__button-next btn-swiper next">
-                <svg
-                  class="next"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle class="next" cx="22" cy="22" r="22" fill="#313131" />
-                  <path
-                    class="next"
-                    d="M19.4618 13.5385L27.9233 22L19.4618 30.4615"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                  />
-                </svg>
+                <img src="/img/arrow.png" alt="" />
               </button>
             </div>
           </div>

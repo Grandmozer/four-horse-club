@@ -34,10 +34,7 @@ let slider = document.querySelector('.slider'),
     if (transition) {
       sliderTrack.style.transition = 'transform .5s';
     }
-    // sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
-
-    // Ну нужно подумать, как он должен принемать размер блока с учётом падингов.
-    sliderTrack.style.transform = `translate3d(-${slideIndex * 414}px, 0px, 0px)`;
+    sliderTrack.style.transform = `translate3d(-${slideIndex * slides[1].offsetWidth}px, 0px, 0px)`;
 
     prev.classList.toggle('disabled', slideIndex === 0);
     next.classList.toggle('disabled', slideIndex === --slides.length);
@@ -187,8 +184,8 @@ arrows.addEventListener('click', function () {
   } else {
     return;
   }
-  console.log(numbers.textContent);
-  console.log(slideIndex);
+  // console.log(numbers.textContent);
+  // console.log(slideIndex);
   slide();
 });
 
@@ -198,7 +195,7 @@ function nextSlide() {
 
   slide();
 
-  console.log(slideIndex);
+  // console.log(slideIndex);
 }
 
 setInterval(nextSlide, 4000);
@@ -379,18 +376,19 @@ function sliderSteps() {
 
   arrows.addEventListener('click', function () {
     let target = event.target;
+    round = rounds.children[slideIndex];
 
     if (target.classList.contains('next')) {
-      // numbers.innerHTML = slideIndex + 2 + '<span>/6</span>';
+      round.classList.toggle('round-active');
       slideIndex++;
     } else if (target.classList.contains('prev')) {
-      // numbers.innerHTML = slideIndex + '<span>/6</span>';
+      round.classList.toggle('round-active');
+
       slideIndex--;
     } else {
       return;
     }
-    // console.log(numbers.textContent);
-    // console.log(slideIndex);
+
     slide();
   });
 }

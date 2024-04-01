@@ -106,53 +106,117 @@
 
 @media only screen and (max-width: 768px) {
   .stepsblock {
+    padding-top: 122px;
     position: relative;
     user-select: none;
     touch-action: pan-y;
     overflow: hidden;
   }
 
+  .stepsblock-title {
+    font-size: 36px;
+    line-height: 110%; /* 39.6px */
+  }
+
+  .stepsblock-p {
+    width: 335px;
+    margin-top: 12px;
+    margin-left: 0px;
+    font-size: 18px;
+    line-height: 120%; /* 21.6px */
+  }
+
+  .slider-list__stepsblock {
+    padding-top: 145px;
+  }
+
   .steps-list__mobile {
     display: flex;
+    /* 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    padding-top: 20px; */
   }
 
   .step-item__mobile {
-    width: 335px;
-    padding: 62px 20px 0px 20px;
+    padding: 42px 20px 25px 20px;
     font-weight: 500;
     background-image: url(/img/hero_bg.jpg);
+
+    /* padding-top: 62px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 335px; */
   }
 
-  .steps-list__mobile::before {
-    content: url('/img/attachment3.png');
+  .steps-list__mobile::after {
+    content: ' ';
+    background-image: url('/img/attachment3.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    width: 379.2px;
+    height: 209px;
     pointer-events: none;
     position: absolute;
-    z-index: 2;
+    z-index: 9999;
     justify-self: center;
-    /* top: -150px;
-  right: 0; */
+    top: -135px;
+    right: -53px;
+    transform: rotate(-3.6deg);
+  }
+
+  .item-content {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 295px;
+    padding-top: 20px;
+  }
+
+  .item-content p {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+  }
+
+  .step-number {
+    margin-right: 16px;
   }
 
   .slider-arrows__stepsblock {
-    justify-content: space-between;
+    margin-top: 28px;
     display: flex;
+    justify-content: center;
+    gap: 16px;
   }
+
   .rounds {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 6px;
   }
+
   .round {
     width: 10px;
     height: 10px;
-
     background-color: var(--color-round);
     border-radius: 50%;
   }
-  .round:not(:last-child) {
-    margin-right: 6px;
+
+  .round-active {
+    background-color: var(--color-text);
   }
+
   .slider-arrows__stepsblock button {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
     border-radius: 44px;
     flex-shrink: 0;
     background-repeat: no-repeat;

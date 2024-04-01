@@ -12,7 +12,7 @@
   display: flex;
 }
 
-.participants__button-next,
+/* .participants__button-next,
 .participants__button-prev {
   width: 44px;
   height: 44px;
@@ -20,16 +20,50 @@
   flex-shrink: 0;
   background-repeat: no-repeat;
   border: none;
+  background-image: url(/img/next.svg);
+  background-size: cover;
 }
 
-.btn-swiper svg :hover {
-  fill: var(--color-yelow);
+.participants__button-prev {
+  transform: rotate(180deg);
+}
+.btn-swiper::after {
+  background-image: url(/img/next.svg);
+  width: 44px;
+  height: 44px;
+  color: transparent;
+}
+.btn-swiper:hover::after {
+  background-image: url(/img/prev.svg);
+  transform: rotate(180deg);
+} */
+/* .next {
+  padding: 12px 0 0 14px;
+}
+.prev {
+  padding: 12px 0 0 18px;
+} */
+.btn-swiper {
+  width: 44px;
+  height: 44px;
+  padding: 0px 5px 2px 0px;
+  border-radius: 50%;
+  background-color: #313131;
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-swiper:hover {
+  background-color: #fbce51;
+}
+.participants__button-next {
+  transform: rotate(180deg);
 }
 
 .disabled,
 .btn-disabled {
   pointer-events: none;
-  fill: var(--color-gray);
+  /* background-color: var(--color-gray); */
 }
 
 .participants-swiper-desk {
@@ -84,7 +118,7 @@
 
 .next,
 .prev {
-  background: none;
+  /* background: none; */
   border: none;
   font-size: 30px;
   cursor: pointer;

@@ -183,3 +183,47 @@
   align-items: center;
   gap: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .participants {
+    padding-bottom: 99px;
+  }
+
+  .slider-list {
+    margin-top: 40px;
+  }
+
+  .player {
+    padding-left: 24px;
+  }
+
+  .player img {
+    width: 244px;
+  }
+
+  .name {
+    width: 286px;
+  }
+
+  .post {
+    padding-top: 9px;
+  }
+
+  .slider-arrows {
+    justify-content: center;
+  }
+
+  .participants__swiper-pagination {
+    margin-top: 40px;
+  }
+
+  .participants__button-next,
+  .participants__button-prev {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pagination-numbers {
+    padding: 0 13px;
+  }
+}

@@ -245,24 +245,24 @@
           <!-- Ну это конечно  совсем не круто вставлять svg код, без серьёзной надобности, при чём он же дублируется и это одна и та же иконка 4 раза. -->
           <div class="slider-arrows__stepsblock mobile">
             <button class="btn-swiper prev">
-              <img src="/img/arrow.png" alt="" />
+              <img class="prev" src="/img/arrow.png" alt="" />
             </button>
             <div class="rounds">
-              <div class="round"></div>
-              <div class="round"></div>
-              <div class="round"></div>
-              <div class="round"></div>
-              <div class="round"></div>
+              <div class="round round-active 1"></div>
+              <div class="round 2"></div>
+              <div class="round 3"></div>
+              <div class="round 4"></div>
+              <div class="round 5"></div>
             </div>
             <button class="participants__button-next btn-swiper next">
-              <img src="/img/arrow.png" alt="" />
+              <img class="next" src="/img/arrow.png" alt="" />
             </button>
           </div>
         </div>
         <div class="participants slider">
           <div class="participants__head">
             <h2 class="stepsblock-title">Участники турнира</h2>
-            <div class="participants__swiper-pagination slider-arrows">
+            <div class="participants__swiper-pagination slider-arrows desktop">
               <button class="participants__button-prev btn-swiper prev">
                 <img src="/img/arrow.png" alt="" />
               </button>
@@ -275,6 +275,7 @@
               </button>
             </div>
           </div>
+
           <div class="participants-swiper-desk">
             <div class="swiper-desk slider-list">
               <div class="slider-track">
@@ -352,6 +353,18 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="participants__swiper-pagination slider-arrows slider-arrows-mobile mobile">
+            <button class="participants__button-prev btn-swiper prev">
+              <img src="/img/arrow.png" alt="" />
+            </button>
+            <div class="pagination-numbers pagination-numbers-mobile">
+              1
+              <span>/6</span>
+            </div>
+            <button class="participants__button-next btn-swiper next">
+              <img src="/img/arrow.png" alt="" />
+            </button>
           </div>
         </div>
       </div>

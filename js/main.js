@@ -5,7 +5,11 @@ let slider = document.querySelector('.slider'),
   sliderTrack = slider.querySelector('.slider-track'),
   slides = slider.querySelectorAll('.swiper-item'),
   arrows = slider.querySelector('.slider-arrows'),
+  arrowsMob = slider.querySelector('.slider-arrows-mobile'),
   numbers = slider.querySelector('.pagination-numbers'),
+  numbersMob = slider.querySelector('.pagination-numbers-mobile'),
+  preMob = arrows.children[0],
+  nextMob = arrows.children[2],
   prev = arrows.children[0],
   next = arrows.children[2],
   slideWidth = slides[0].offsetWidth,
@@ -37,7 +41,18 @@ let slider = document.querySelector('.slider'),
     sliderTrack.style.transform = `translate3d(-${slideIndex * slides[1].offsetWidth}px, 0px, 0px)`;
 
     prev.classList.toggle('disabled', slideIndex === 0);
+
     next.classList.toggle('disabled', slideIndex === --slides.length);
+  },
+  slideMob = function () {
+    if (transition) {
+      sliderTrack.style.transition = 'transform .5s';
+    }
+    sliderTrack.style.transform = `translate3d(-${slideIndex * slides[1].offsetWidth}px, 0px, 0px)`;
+
+    prevMob.classList.toggle('disabled', slideIndex === 0);
+
+    nextMob.classList.toggle('disabled', slideIndex === --slides.length);
   },
   swipeStart = function () {
     let evt = getEvent();
@@ -133,9 +148,11 @@ let slider = document.querySelector('.slider'),
         if (posInit < posX1) {
           slideIndex--;
           numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
+          numbersMob.innerHTML = slideIndex + 1 + '<span>/6</span>';
         } else if (posInit > posX1) {
           slideIndex++;
           numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
+          numbersMob.innerHTML = slideIndex + 1 + '<span>/6</span>';
         }
       }
 
@@ -189,9 +206,27 @@ arrows.addEventListener('click', function () {
   slide();
 });
 
+arrowsMob.addEventListener('click', function () {
+  let target = event.target;
+
+  if (target.classList.contains('next')) {
+    numbersMob.innerHTML = slideIndex + 2 + '<span>/6</span>';
+    slideIndex++;
+  } else if (target.classList.contains('prev')) {
+    numbersMob.innerHTML = slideIndex + '<span>/6</span>';
+    slideIndex--;
+  } else {
+    return;
+  }
+  // console.log(numbers.textContent);
+  // console.log(slideIndex);
+  slideMob();
+});
+
 function nextSlide() {
   slideIndex = (slideIndex % slides.length) + 1;
   numbers.innerHTML = slideIndex + '<span>/6</span>';
+  numbersMob.innerHTML = slideIndex + '<span>/6</span>';
 
   slide();
 
@@ -207,7 +242,6 @@ function sliderSteps() {
     sliderTrack = slider.querySelector('.slider-track__stepsblock'),
     slides = slider.querySelectorAll('.step-item__mobile'),
     arrows = slider.querySelector('.slider-arrows__stepsblock'),
-    rounds = slider.querySelector('.rounds'),
     prev = arrows.children[0],
     next = arrows.children[2],
     slideWidth = slides[0].offsetWidth,
@@ -334,10 +368,8 @@ function sliderSteps() {
         if (Math.abs(posFinal) > posThreshold || swipeEndTime - swipeStartTime < 300) {
           if (posInit < posX1) {
             slideIndex--;
-            // numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
           } else if (posInit > posX1) {
             slideIndex++;
-            // numbers.innerHTML = slideIndex + 1 + '<span>/6</span>';
           }
         }
 
@@ -369,26 +401,45 @@ function sliderSteps() {
 
   sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
   sliderList.classList.add('grab');
+  let rounds = document.querySelector('.rounds');
+  // round = [rounds.children[slideIndex]]; // создала массив длинной 1
+  //  round = new Array(document.querySelector('.rounds').push(rounds.children[slideIndex])); // создала массив длинной 1
 
   sliderTrack.addEventListener('transitionend', () => (allowSwipe = true));
   slider.addEventListener('touchstart', swipeStart);
   slider.addEventListener('mousedown', swipeStart);
 
+  function showPage(item) {
+    if (active) {
+      active.classList.remove('_active');
+    }
+    active = item;
+    item.classList.add('_active');
+  }
   arrows.addEventListener('click', function () {
     let target = event.target;
-    round = rounds.children[slideIndex];
-
+    let round = rounds.children[slideIndex];
     if (target.classList.contains('next')) {
+      // for (const child of rounds.children) {
+      //   child.classList.add('round-active');
+      // }
+      // console.log(rounds);
+
       round.classList.toggle('round-active');
+
+      // for (const child of rounds.children) {
+      //   child.classList.add('round-active');
+      // }
+
+      // console.log(rounds.indexOf(rounds.children[slideIndex]));
       slideIndex++;
     } else if (target.classList.contains('prev')) {
-      round.classList.toggle('round-active');
-
+      round.classList.remove('round-active');
       slideIndex--;
     } else {
       return;
     }
-
+    console.log(rounds);
     slide();
   });
 }

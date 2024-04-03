@@ -51,3 +51,8 @@
   background-color: var(--color-blue);
   color: var(--color-white);
 }
+
+.btn-outline:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}

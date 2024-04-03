@@ -52,5 +52,6 @@
   :root {
     --container-width: 336px;
     --stroke-text-size: 18px;
+    --section-margin: 120px;
   }
 }

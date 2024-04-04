@@ -132,25 +132,12 @@
 
   .steps-list__mobile {
     display: flex;
-    /* 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 335px;
-    padding-top: 20px; */
   }
 
   .step-item__mobile {
     padding: 42px 20px 25px 20px;
     font-weight: 500;
     background-image: url(/img/hero_bg.jpg);
-
-    /* padding-top: 62px;
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 335px; */
   }
 
   .steps-list__mobile::after {
@@ -172,7 +159,7 @@
   .item-content {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+
     width: 295px;
     padding-top: 20px;
   }

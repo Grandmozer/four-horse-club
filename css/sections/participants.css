@@ -12,60 +12,6 @@
   display: flex;
 }
 
-/* .participants__button-next,
-.participants__button-prev {
-  width: 44px;
-  height: 44px;
-  border-radius: 44px;
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-  border: none;
-  background-image: url(/img/next.svg);
-  background-size: cover;
-}
-
-.participants__button-prev {
-  transform: rotate(180deg);
-}
-.btn-swiper::after {
-  background-image: url(/img/next.svg);
-  width: 44px;
-  height: 44px;
-  color: transparent;
-}
-.btn-swiper:hover::after {
-  background-image: url(/img/prev.svg);
-  transform: rotate(180deg);
-} */
-/* .next {
-  padding: 12px 0 0 14px;
-}
-.prev {
-  padding: 12px 0 0 18px;
-} */
-.btn-swiper {
-  width: 44px;
-  height: 44px;
-  padding: 0px 5px 2px 0px;
-  border-radius: 50%;
-  background-color: #313131;
-  transition: 0.3s;
-  cursor: pointer;
-  user-select: none;
-}
-.btn-swiper:hover {
-  background-color: #fbce51;
-}
-.participants__button-next {
-  transform: rotate(180deg);
-}
-
-.disabled,
-.btn-disabled {
-  pointer-events: none;
-  /* background-color: var(--color-gray); */
-}
-
 .participants-swiper-desk {
   position: relative;
   margin: 0 auto;
@@ -110,38 +56,6 @@
   object-fit: cover;
 }
 
-.slider-arrows {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.next,
-.prev {
-  /* background: none; */
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.next.disabled,
-.prev.disabled {
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-.pagination-numbers {
-  font-size: var(--xs-text-size);
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  padding: 0 18px;
-}
-
-.pagination-numbers span {
-  opacity: 0.6;
-}
-
 .player {
   align-items: center;
   text-align: center;
@@ -164,24 +78,6 @@
   font-weight: 400;
   line-height: 120%;
   opacity: 0.6;
-}
-
-.btn-outline {
-  margin-top: 19px;
-  padding: 7px 11px;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
-  border-radius: 62px;
-  font-variant-numeric: lining-nums proportional-nums;
-  font-family: 'Golos Text';
-  font-size: var(--xs-text-size);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -207,23 +103,5 @@
 
   .post {
     padding-top: 9px;
-  }
-
-  .slider-arrows {
-    justify-content: center;
-  }
-
-  .participants__swiper-pagination {
-    margin-top: 40px;
-  }
-
-  .participants__button-next,
-  .participants__button-prev {
-    width: 36px;
-    height: 36px;
-  }
-
-  .pagination-numbers {
-    padding: 0 13px;
   }
 }

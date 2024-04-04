@@ -3,23 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/favico.svg" />
     <link rel="stylesheet" href="css/index.css" />
 
-    <!-- test -->
-    <link rel="stylesheet" href="/css/base/variables.css" />
-    <link rel="stylesheet" href="/css/base/btn.css" />
-
-    <link rel="stylesheet" href="/css/layout/header.css" />
-    <link rel="stylesheet" href="/css/sections/hero.css" />
-    <link rel="stylesheet" href="/css/sections/stepsblock.css" />
-    <link rel="stylesheet" href="/css/sections/infoblock.css" />
-    <link rel="stylesheet" href="/css/sections/participants.css" />
-    <link rel="stylesheet" href="/css/base/base.css" />
-    <link rel="stylesheet" href="/css/layout/footer.css" />
-
     <script defer src="js/main.js"></script>
-    <!-- <script defer src="js/slider.js"></script> -->
-    <!-- <script defer src="js/swiper.js"></script> -->
+    <script defer src="js/smooth.js"></script>
 
     <title>Клуб четырёх коней</title>
   </head>
@@ -47,8 +35,9 @@
               по шахматам
             </p>
             <div class="hero-btns">
-              <button class="btn btn-maintain">Поддержать шахматную мысль</button>
-              <button class="btn btn-detail">Подробнее о турнире</button>
+              <a href="#t1" class="btn btn-maintain">Поддержать шахматную мысль</a>
+
+              <a href="#t2" class="btn btn-detail">Подробнее о турнире</a>
             </div>
             <img src="/img/city.png" class="hero-image hero-image-city" alt="#" />
             <img src="/img/horse.png" class="hero-image hero-image-horse" alt="#" />
@@ -81,7 +70,9 @@
         <div class="infoblock">
           <div class="infoblock-support">
             <div class="infoblock-title">
-              <h3 class="infoblock__title">Чтобы поддержать Международный васюкинский турнир</h3>
+              <h3 id="t1" class="infoblock__title">
+                Чтобы поддержать Международный васюкинский турнир
+              </h3>
               <img
                 class="infoblock-support__img mobile"
                 src="/img/attachment1.png"
@@ -101,7 +92,7 @@
           <div class="infoblock-session">
             <img class="infoblock-session__img" src="/img/support.png" alt="Шахматист" />
             <div class="infoblock-session__content">
-              <h3 class="infoblock__title">
+              <h3 id="t2" class="infoblock__title">
                 и Сеанс
                 <span class="text-red"> одновременной игры в шахматы на 160 досках</span>
                 гроссмейстера О. Бендера
@@ -354,7 +345,9 @@
               </div>
             </div>
           </div>
-          <div class="participants__swiper-pagination slider-arrows slider-arrows-mobile mobile">
+          <div
+            class="mobile participants__swiper-pagination slider-arrows slider-arrows-mobile mobile"
+          >
             <button class="participants__button-prev btn-swiper prev">
               <img src="/img/arrow.png" alt="" />
             </button>

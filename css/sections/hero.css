@@ -199,16 +199,6 @@
     width: 875px;
     bottom: 31px;
   }
-
-  .hero-btns {
-    flex-direction: column;
-  }
-
-  .btn-detail {
-    background-color: var(--color-white);
-    border: none;
-    margin-top: 14px;
-  }
 }
 
 @media only screen and (max-width: 579px) {
@@ -230,15 +220,6 @@
 
   .hero-title span:first-child {
     margin-left: 8px;
-  }
-
-  .hero-btns {
-    margin-top: 31px;
-    display: flex;
-  }
-
-  .btn-maintain {
-    padding: 12px 17px;
   }
 
   .hero-text-circle {
@@ -277,5 +258,14 @@
 
   .red-stroke {
     padding: 10px;
+  }
+}
+@media only screen and (max-width: 364px) {
+  .hero-image-city {
+    bottom: 10px;
+  }
+  .hero-image-chess1,
+  .hero-image-chess2 {
+    display: none;
   }
 }
